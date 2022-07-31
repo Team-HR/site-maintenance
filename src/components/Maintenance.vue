@@ -1,21 +1,32 @@
 <template>
   <div class="maintenance">
-    <img alt="Vue logo" src="../assets/hammer-and-wrench-microsoft.png">
-    <h1>Site Maintenance</h1>
-    <p>We are very sorry we're unable to process all of your requests right now. We HR-IT are having our server maintenance and will get back to you as soon as possible.
+    <img alt="Vue logo" src="../assets/hammer-and-wrench-microsoft.png" />
+    <h1>Under Maintenance</h1>
+    <p class="message">
+      We are very sorry we're unable to process all of your requests right now.
+      We are having our server maintenance and will get back to you as soon as
+      possible.
     </p>
-    <p>#TEAMHR</p>
+    <a href="https://www.facebook.com/teamhrlgubayawan" class="footer"
+      >#TEAMHR</a
+    >
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Maintenance',
-}
+  name: "Maintenance",
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.message {
+  font-size: 32px;
+}
+.footer {
+  font-size: 28px;
+}
 h3 {
   margin: 40px 0 0;
 }
